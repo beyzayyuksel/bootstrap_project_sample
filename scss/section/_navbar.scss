@@ -1,0 +1,23 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+.menu{
+    @include gradient;
+    
+    .navbar-nav .nav-link {
+        padding:0 1rem;
+        color: $white;
+        text-transform: capitalize;
+        font-weight: 600;
+
+        &:hover{
+            color: $yellow-dark;
+
+            &:first-child{
+                color: $primary;
+            }
+        }
+
+    
+    }
+}
+
